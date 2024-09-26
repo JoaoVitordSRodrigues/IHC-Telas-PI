@@ -21,6 +21,10 @@ header {
         color: black;
     }
 
+    a:visited {
+        color: black; /* Mesma cor do link normal */
+    }
+
     .user-logo{
         img {
             width: 34px;
@@ -101,6 +105,10 @@ main {
 
     a{
         color: black;
+    }
+
+    a:visited {
+        color: black; /* Mesma cor do link normal */
     }
 }
 
