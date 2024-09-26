@@ -126,54 +126,74 @@ main {
     gap: 4rem;
     padding: 4px;
     flex-wrap: wrap; /* Para permitir que os elementos se ajustem em telas menores */
+
+    
 }
 
-/* Efeito hover para todos os tamanhos */
 .project:hover{
     opacity: 0.7;
 }
 
-/* Estilos de imagem */
 .project img{
     width: 250px;
     height: auto;
-    max-width: 100%; /* Garante que a imagem não extrapole o container */
+    max-width: 100%;
 }
 
 /* Ajustes para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 940px) {
     .project {
-        flex-direction: column; /* Empilha a imagem e o texto */
-        align-items: center; /* Centraliza o conteúdo */
-        gap: 1rem; /* Reduz o espaçamento entre os elementos */
+        flex-direction: column;
+        align-items: center; 
+        gap: 1rem; 
     }
 
     .project img {
-        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
-        max-width: 300px; /* Limita o tamanho máximo da imagem */
+        width: 100%; 
+        max-width: 300px; 
     }
     
     .project .about {
-        text-align: center; /* Centraliza o texto */
+        text-align: center;
     }
 }
 
 /* Para telas muito pequenas (como smartphones) */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .project {
-        padding: 2px; /* Reduz o padding em telas muito pequenas */
-        gap: 0.5rem; /* Menor espaçamento entre os elementos */
+        padding: 2px; 
+        gap: 0.5rem; 
     }
 
     .project img {
-        width: 100%; /* Garante que a imagem ocupe toda a largura */
-        max-width: 200px; /* Ajusta o tamanho máximo em telas menores */
+        width: 100%; 
+        max-width: 200px; 
     }
 
     .project .about {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte para melhor leitura */
+        font-size: 0.9rem; 
     }
 }
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+.about span {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+
+.about p {
+    font-size: 1rem; 
+    color: #555;
+}
+
+
 
 /*Projeto informações*/
 .row {
