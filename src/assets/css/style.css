@@ -79,13 +79,18 @@ input[type="text"], input[type="password"] {
     border-radius: 4px;
 } 
 
-.buttonForm{
-    background-color: rgb(49, 48, 48);
-    padding: 10px;
-    width: 50vw;
-    color: #e4e2e2;
-    border-radius: 4px;
-    font-size: 14pt;
+.div-btn-login{
+    text-align: center;
+    
+    .buttonForm{
+        
+        background-color: rgb(49, 48, 48);
+        padding: 10px;
+        width: 50vw;
+        color: #e4e2e2;
+        border-radius: 4px;
+        font-size: 14pt;
+    }
 }
 
 .buttonForm:hover{
@@ -120,16 +125,54 @@ main {
     border-radius: 10px;
     gap: 4rem;
     padding: 4px;
-    
+    flex-wrap: wrap; /* Para permitir que os elementos se ajustem em telas menores */
 }
 
+/* Efeito hover para todos os tamanhos */
 .project:hover{
     opacity: 0.7;
 }
 
+/* Estilos de imagem */
 .project img{
     width: 250px;
     height: auto;
+    max-width: 100%; /* Garante que a imagem não extrapole o container */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* Empilha a imagem e o texto */
+        align-items: center; /* Centraliza o conteúdo */
+        gap: 1rem; /* Reduz o espaçamento entre os elementos */
+    }
+
+    .project img {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+        max-width: 300px; /* Limita o tamanho máximo da imagem */
+    }
+    
+    .project .about {
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+/* Para telas muito pequenas (como smartphones) */
+@media (max-width: 480px) {
+    .project {
+        padding: 2px; /* Reduz o padding em telas muito pequenas */
+        gap: 0.5rem; /* Menor espaçamento entre os elementos */
+    }
+
+    .project img {
+        width: 100%; /* Garante que a imagem ocupe toda a largura */
+        max-width: 200px; /* Ajusta o tamanho máximo em telas menores */
+    }
+
+    .project .about {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte para melhor leitura */
+    }
 }
 
 /*Projeto informações*/
