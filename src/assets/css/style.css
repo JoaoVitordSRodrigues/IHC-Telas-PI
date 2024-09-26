@@ -18,6 +18,10 @@ header {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     
     a{
+        color: black;
+    }
+
+    .user-logo{
         img {
             width: 34px;
             padding: 2px;
@@ -94,6 +98,10 @@ main {
     h2{
         margin-bottom: 10px;
     }
+
+    a{
+        color: black;
+    }
 }
 
 .project {
@@ -114,4 +122,17 @@ main {
 .project img{
     width: 250px;
     height: auto;
+}
+
+/*Projeto informações*/
+.row {
+    display: flex; 
+    margin-top: 10px;
+    gap: 20px;
+}
+.div-col-informacao {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
 }
