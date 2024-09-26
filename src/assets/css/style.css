@@ -82,8 +82,7 @@ input[type="text"], input[type="password"] {
 .div-btn-login{
     text-align: center;
     
-    .buttonForm{
-        
+    .buttonForm{     
         background-color: rgb(49, 48, 48);
         padding: 10px;
         width: 50vw;
@@ -125,9 +124,7 @@ main {
     border-radius: 10px;
     gap: 4rem;
     padding: 4px;
-    flex-wrap: wrap; /* Para permitir que os elementos se ajustem em telas menores */
-
-    
+    flex-wrap: wrap; /* Para permitir que os elementos se ajustem em telas menores */  
 }
 
 .project:hover{
